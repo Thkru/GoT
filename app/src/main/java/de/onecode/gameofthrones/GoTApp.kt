@@ -21,7 +21,6 @@ fun GoTApp() {
         }
     }
 }
-}
 
 @Composable
 fun Greeting(name: String) {
