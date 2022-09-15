@@ -14,20 +14,17 @@ object Libraries {
 
     object Compose {
         const val ui = "androidx.compose.ui:ui:${Versions.compose}"
-        const val material = "androidx.compose.material:material:${Versions.compose}"
-        const val materialExtended =
-            "androidx.compose.material:material-icons-extended:${Versions.compose}"
+        const val material = "androidx.compose.material3:material3:${Versions.material3}" // TODO use Material3 instead
+        const val materialExtended = "androidx.compose.material:material-icons-extended:${Versions.compose}"
         const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
-        const val hiltNavigation =
-            "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
+        const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
         const val paging = "androidx.paging:paging-compose:${Versions.pagingCompose}"
     }
 
     object Lifecycle {
         const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
-        const val viewModelCompose =
-            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleCompose}"
+        const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleCompose}"
     }
 
     object Room {
