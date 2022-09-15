@@ -6,7 +6,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import de.onecode.gameofthrones.model.CharacterModel
+import de.onecode.gameofthrones.model.LordModel
 import de.onecode.gameofthrones.model.HouseModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -52,7 +52,7 @@ interface ApiService {
     suspend fun getHouses(@Query("page") page: Int = 1, @Query("pageSize") pageSize: Int = 30): List<HouseModel>
 
     @GET("characters/{id}")
-    suspend fun getLord(@Path("id") id: String): CharacterModel?
+    suspend fun getLord(@Path("id") id: String): LordModel?
 
     @GET("houses/{id}")
     suspend fun getHouse(@Path("id") id: String): HouseModel?

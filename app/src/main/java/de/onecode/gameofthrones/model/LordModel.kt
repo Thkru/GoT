@@ -1,6 +1,6 @@
 package de.onecode.gameofthrones.model
 
-data class CharacterModel(
+data class LordModel(
     val aliases: List<String>,
     val allegiances: List<String>,
     val books: List<String>,
